@@ -14,19 +14,6 @@
     perspective: 1000px;
 }
 
-/* Video Background */
-.heroVideo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    transform: translateX(-50%) translateY(-50%);
-    object-fit: cover;
-}
 
 .videoOverlay {
     position: absolute;
@@ -78,13 +65,48 @@
     margin-top: 5vh;
 }
 
+.brandContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: scale(0.9);
+    animation: scale-up-reveal 1.5s 0.5s forwards ease-out;
+}
+
+.heroLogo {
+    width: 120px;
+    height: auto;
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.2));
+    margin-bottom: 10px;
+}
+
+.heroTitle {
+    font-family: var(--font-cinzel), 'Cinzel', serif;
+    font-size: 3.5rem;
+    letter-spacing: 12px;
+    color: #fff;
+    font-weight: 400;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    margin-left: 12px; /* offset for letter-spacing */
+}
+
+.heroSubtitle {
+    font-size: 1rem;
+    letter-spacing: 8px;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+}
+
 .ctaContainer {
     display: flex;
     gap: 20px;
     margin-top: 50px;
     opacity: 0;
     transform: translateY(20px);
-    animation: fade-up 2s 2.5s forwards ease-out;
+    animation: fade-up 2s 1.5s forwards ease-out;
 }
 
 .btn {
@@ -189,6 +211,17 @@
 
 /* Mobile */
 @media (max-width: 900px) {
+    .heroTitle {
+        font-size: 2rem;
+        letter-spacing: 6px;
+        margin-left: 6px;
+    }
+
+    .heroSubtitle {
+        font-size: 0.8rem;
+        letter-spacing: 4px;
+    }
+
     .ctaContainer {
         flex-direction: column;
         width: 80%;
@@ -196,5 +229,48 @@
 
     .btn {
         text-align: center;
+    }
+}
+
+/* -------------------------------------------
+   Local Keyframes (CSS Modules scoping)
+   ------------------------------------------- */
+@keyframes scale-up-reveal {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes scroll-drop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(200%);
     }
 }

@@ -20,7 +20,7 @@ export default function Navbar() {
             <div className={styles.navLogo}>
                 <Link href="/" className={styles.navLogoLink}>
                     <Image
-                        src="/images/imperial motors logo negro.png"
+                        src="/ImperialMotors1/images/imperial motors logo negro.png"
                         alt="IM Logo"
                         width={40}
                         height={40}

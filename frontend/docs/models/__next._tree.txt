@@ -1,0 +1,13 @@
+:HL["/ImperialMotors1/_next/static/chunks/0i8ynbpzsxqbh.css","style"]
+:HL["/ImperialMotors1/_next/static/media/01e4147cff8141ee-s.p.10ked.7w885.g.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/ImperialMotors1/_next/static/media/8bd76523131fa0fc-s.p.0jox806dnq5~c.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/ImperialMotors1/_next/static/media/cc014fcb166cf364-s.p.0rbrcy8kuidpb.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/ImperialMotors1/_next/static/media/e8f2fbee2754df70-s.p.0fzkl03jw-sdz.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/ImperialMotors1/_next/static/chunks/0qdx9wxnsh2jv.css","style"]
+:HL["/images/lamborghini_cat.png","image"]
+:HL["/images/foto_pagani_final.jpg","image"]
+:HL["/images/koenigsegg_cat.png","image"]
+:HL["/images/bugatti_cat.png","image"]
+:HL["/images/porsche_cat.png","image"]
+:HL["https://images.unsplash.com/photo-1626668893632-6f3a4466d22f?q=80&w=1000&auto=format&fit=crop","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"models","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"_ChKSTzySHgk1xulbC02i"}

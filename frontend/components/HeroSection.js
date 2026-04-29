@@ -5,14 +5,6 @@ import styles from './HeroSection.module.css';
 export default function HeroSection() {
     return (
         <section className={styles.heroSection}>
-            {/* Video Background Layer */}
-            <video className={styles.heroVideo} autoPlay loop muted playsInline>
-                <source
-                    src="/videos/Imperial_motors_promotional_video_921275a997 (online-video-cutter.com) (1).mp4"
-                    type="video/mp4"
-                />
-                Your browser does not support the video tag.
-            </video>
 
             {/* Deep Black Overlay */}
             <div className={styles.videoOverlay}></div>
@@ -25,6 +17,16 @@ export default function HeroSection() {
 
             {/* Main Content Overlay */}
             <div className={styles.heroContent}>
+                <div className={styles.brandContainer}>
+                    <img 
+                        src="/ImperialMotors1/images/imperial motors logo negro.png" 
+                        alt="Imperial Motors Logo" 
+                        className={styles.heroLogo} 
+                    />
+                    <h1 className={styles.heroTitle}>IMPERIAL MOTORS</h1>
+                    <p className={styles.heroSubtitle}>LUXURY BEYOND MOTION</p>
+                </div>
+
                 <div className={styles.ctaContainer}>
                     <Link href="/models" className={styles.btnPrimary}>
                         Discover the Fleet

@@ -9,7 +9,7 @@ export const metadata = {
 
 const carsData = [
     {
-        image: '/images/lamborghini_cat.png',
+        image: '/ImperialMotors1/images/lamborghini_cat.png',
         alt: 'Lamborghini Collection',
         heritage: 'Italy',
         focus: 'Raw Emotion',
@@ -18,7 +18,7 @@ const carsData = [
             "Pure adrenaline. Engineering excellence from Sant'Agata Bolognese, redefining the limits of visual and auditory drama.",
     },
     {
-        image: '/images/foto_pagani_final.jpg',
+        image: '/ImperialMotors1/images/foto_pagani_final.jpg',
         alt: 'Pagani Collection',
         heritage: 'Modena',
         focus: 'Automotive Art',
@@ -27,7 +27,7 @@ const carsData = [
             "Automobile art. Horacio Pagani's vision of technical perfection where every bolt is a masterpiece of design.",
     },
     {
-        image: '/images/koenigsegg_cat.png',
+        image: '/ImperialMotors1/images/koenigsegg_cat.png',
         alt: 'Koenigsegg Collection',
         heritage: 'Sweden',
         focus: 'Innovation',
@@ -36,7 +36,7 @@ const carsData = [
             'The ghost in the machine. Breaking the laws of physics with revolutionary engineering and unmatched top speeds.',
     },
     {
-        image: '/images/bugatti_cat.png',
+        image: '/ImperialMotors1/images/bugatti_cat.png',
         alt: 'Bugatti Collection',
         heritage: 'France',
         focus: 'Ultimate Grandeur',
@@ -45,7 +45,7 @@ const carsData = [
             "Beyond speed. The pinnacle of automotive luxury and dominance, crafting the world's most sophisticated hyper-tourers.",
     },
     {
-        image: '/images/porsche_cat.png',
+        image: '/ImperialMotors1/images/porsche_cat.png',
         alt: 'Porsche Collection',
         heritage: 'Germany',
         focus: 'Precision Engineering',
