@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styles from './ModelCard.module.css';
 
-export default function ModelCard({ image, alt, heritage, focus, name, description, slug}) {
+export default function ModelCard({ image, alt, heritage, focus, name, description, slug, buttonText, buttonHref }) {
     return (
         <article className={styles.modelCard}>
             <div className={styles.modelImageContainer}>
@@ -15,8 +15,8 @@ export default function ModelCard({ image, alt, heritage, focus, name, descripti
             <div className={styles.modelInfo}>
                 <h2 className={styles.modelName}>{name}</h2>
                 <p className={styles.modelDesc}>{description}</p>
-           <Link href={`/models/Cars/${slug}`}>
-        View collection
+           <Link href={buttonHref || `/models/Cars/${slug}`}>
+        {buttonText || "View collection"}
       </Link>
             </div>
         </article>

@@ -1,0 +1,164 @@
+.configuratorLayout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #050505;
+  color: #e6dfc8;
+}
+
+.sidebar {
+  width: 320px;
+  background-color: #0a0a0a;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  overflow-y: auto;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+.sidebarTitle {
+  font-family: var(--font-cinzel), 'Cinzel', serif;
+  font-size: 1.5rem;
+  color: #fff;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 10px;
+}
+
+.filterGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.filterTitle {
+  font-family: var(--font-cinzel), 'Cinzel', serif;
+  font-size: 1.1rem;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 5px;
+}
+
+.filterLabel {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0.3s;
+}
+
+.filterLabel:hover {
+  color: #fff;
+}
+
+.filterInput {
+  accent-color: #e6dfc8;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.sliderContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sliderInput {
+  width: 100%;
+  accent-color: #e6dfc8;
+  cursor: pointer;
+}
+
+.sliderValues {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.8);
+  font-family: monospace;
+}
+
+.colorSwatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.swatch {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.2);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.swatch.selected {
+  border-color: #e6dfc8;
+  transform: scale(1.15);
+  box-shadow: 0 0 10px rgba(230, 223, 200, 0.4);
+}
+
+.mainContent {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto;
+}
+
+.pageTitle {
+  font-family: var(--font-cinzel), 'Cinzel', serif;
+  font-size: 3rem;
+  color: #fff;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.pageSubtitle {
+  font-family: var(--font-montserrat), 'Montserrat', sans-serif;
+  text-align: center;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.carsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+  justify-items: center;
+}
+
+.noResults {
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 80px;
+  width: 100%;
+  grid-column: 1 / -1;
+  font-family: var(--font-montserrat), 'Montserrat', sans-serif;
+}
+
+@media (max-width: 900px) {
+  .configuratorLayout {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    position: static;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
